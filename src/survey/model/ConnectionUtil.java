@@ -1,4 +1,4 @@
-package survey;
+package survey.model;
 
 import java.sql.Connection;
 import java.sql.SQLException;

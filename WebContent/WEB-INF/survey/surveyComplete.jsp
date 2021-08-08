@@ -9,8 +9,8 @@
 <body>
 <h3>설문에 참여해주셔서 감사합니다.</h3>
 <form>
-	<input type="button" value="메인페이지 이동" onclick="window.location='surveyMain.jsp'">
-	<input type="button" value="설문결과페이지 이동" onclick="window.location='surveyResult.jsp'">
+	<input type="button" value="메인페이지 이동" onclick="window.location='<%=request.getContextPath()%>/'">
+	<input type="button" value="설문결과페이지 이동" onclick="window.location='<%=request.getContextPath()%>/result'">
 </form>
 </body>
 </html>

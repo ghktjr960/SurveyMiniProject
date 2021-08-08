@@ -18,8 +18,8 @@
 </p>
 <p>
 <form>
-	<input type="button" value="설문조사 진행" onclick="window.location='surveyInfoForm.jsp'">
-	<input type="button" value="돌아가기" onclick="window.location='surveyMain.jsp'">
+	<input type="button" value="설문조사 진행" onclick="window.location='<%=request.getContextPath()%>/infoForm'">
+	<input type="button" value="돌아가기" onclick="window.location='<%=request.getContextPath()%>/'">
 </form>
 </body>
 </html>

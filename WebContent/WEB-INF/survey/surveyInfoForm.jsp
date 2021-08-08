@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +8,7 @@
 <title>설문조사</title>
 </head>
 <body>
-	<form action="surveyInfoProc.jsp" method="post">
+	<form action="<%=request.getContextPath()%>/infoProc" method="post">
 		<fieldset>
 			<legend><b>코로나 블루</b></legend>
 				<p>코로나 블루란?</p> 
@@ -18,7 +19,7 @@
 			<legend><b>설문자 정보입력</b></legend>
 			<ul>
 				<li>
-					<b>나이 </b>  
+					<b>나이 </b>
 					<select name="age">
 						<option value="10">10대</option>
 						<option value="20">20대</option>
@@ -60,9 +61,8 @@
 					</select>
 				</li>
 			</ul>
-				<input type="hidden" name="num" value="0">
 				<input type="submit" value="설문조사시작">
-				<input type="button" value="돌아가기" onclick="window.location='surveyMain.jsp'">
+				<input type="button" value="돌아가기" onclick="window.location='<%=request.getContextPath()%>/main'">
 		</fieldset>
 	
 	

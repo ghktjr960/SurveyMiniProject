@@ -12,7 +12,7 @@ ul{
 </style>
 </head>
 <body>
-	<form action="surveyValueProc.jsp" method="post">
+	<form action="<%=request.getContextPath()%>/valueProc" method="post">
 		<fieldset>
 			<legend>설문조사</legend>		
 				<p>

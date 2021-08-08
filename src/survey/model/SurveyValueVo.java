@@ -1,4 +1,4 @@
-package survey;
+package survey.model;
 
 public class SurveyValueVo {
 	private int num;
